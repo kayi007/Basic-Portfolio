@@ -4,35 +4,52 @@
     <head>
         <meta charset="UTF-8">
         <title>About Me</title>
+        <!-- Tried linking Bootstrap and it overrided some of my CSS styling -->
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     </head>
 
     <body>
 
         <div class="container">
-            <!-- Do I use div here? since it's only for styling but stackoverflow said only use div when no other semantic elements are grouped -->
-            <section id="top">
-                <header>Your Name</header>
-                <a href="index.html">About</a>
-                <a href="contact.html">Portfolio</a>
-                <a href="portfolio.html">Contact</a>
-            </section>
 
-            <section id="bottom">
-                <h1>About Me</h1>
-                <hr>
-                <!-- move to css file later -->
-                <img src="assets/images/shibainu.jpg" alt="Shiba Inu Dog" width="150" height="150">
+            <header>
+                <div class="top_content">
+                    <div class="logo">Your Name</div>
+                    <nav>
+                        <a href="index.html">About</a> 
+                            <!-- <div class="v1"></div> -->
+                        <a href="portfolio.html">Portfolio</a> 
+                            <!-- <div class="v1"></div> -->
+                        <a href="contact.html" id="endNav">Contact</a> 
+                            <!-- <div class="v1"></div> -->
+                    </nav>
+                </div>
+            </header>
 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nulla dolores accusantium blanditiis, sint quasi? Iusto sunt delectus aspernatur commodi laborum ducimus cupiditate aperiam sequi. Reprehenderit nemo aperiam quo rem!</p>
+            <div class="backgroundIMG">
+                <section>
+                    <div class="bot_content">
+                        <h1>About Me</h1>
+                        <hr />
+                        <article>
+                            <!-- move to css file later -->
+                        
+                            <img src="assets/images/shibainu.jpg" alt="Shiba Inu Dog" width="150" height="150">
+        
+                            <p id="specialP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nulla dolores accusantium blanditiis, sint quasi? Iusto sunt delectus aspernatur commodi laborum ducimus cupiditate aperiam sequi. Reprehenderit nemo aperiam quo rem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus suscipit culpa nisi ad vel sunt iusto voluptatem fugiat blanditiis accusamus accusantium quam velit quod sed voluptate reprehenderit, et at asperiores?</p>
+                
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut excepturi nisi est, molestias accusamus aliquam! Velit animi sequi error debitis dignissimos! Possimus expedita esse corporis iure molestias qui earum eveniet!</p>
 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus suscipit culpa nisi ad vel sunt iusto voluptatem fugiat blanditiis accusamus accusantium quam velit quod sed voluptate reprehenderit, et at asperiores?</p>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea placeat temporibus, ipsum, tempore nihil aliquid deleniti alias nobis praesentium obcaecati iste nostrum reprehenderit exercitationem excepturi numquam facilis neque tenetur voluptate? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus expedita quaerat et saepe consectetur aliquid reprehenderit debitis ut enim molestias corrupti, ipsa repellendus ipsum, excepturi dolor. Illo culpa iusto laudantium.
+                            </p>
+                        </article>
+                    </div>
+                </section>
+            </div>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut excepturi nisi est, molestias accusamus aliquam! Velit animi sequi error debitis dignissimos! Possimus expedita esse corporis iure molestias qui earum eveniet!</p>
-
-            </section>
-
-            <footer>Copyright &copy;</footer>
+            <div id="end">
+                <footer>Copyright &copy;</footer>
+            </div>
         </div>
 
     </body>
